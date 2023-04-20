@@ -10,7 +10,7 @@ export function createServer(): http.Server {
     secret: process.env.WEBHOOK_SECRET ?? '',
   });
 
-  webhooks.on('release.created', async (ctx): Promise<void> => {
+  webhooks.on('package.published', async (ctx): Promise<void> => {
     const repo = ctx.payload.repository;
 
     if (
