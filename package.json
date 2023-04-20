@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@esbuild-kit/esm-loader": "^2.5.5",
-    "@octokit/core": "^3.6.0",
     "@octokit/rest": "^18.0.0",
     "@octokit/webhooks": "^11.0.0",
     "@sinclair/typebox": "^0.28.0",
@@ -41,8 +40,6 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@typescript-eslint/utils": "^5.57.1",
-    "@vitest/coverage-c8": "^0.29.8",
-    "@vitest/ui": "^0.29.8",
     "dotenv": "^16.0.3",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
@@ -61,10 +58,7 @@
     "prettier": "^2.8.7",
     "prettier-plugin-jsdoc": "^0.4.2",
     "prettier-plugin-sh": "^0.12.8",
-    "typescript": "~5.0.4",
-    "vite": "^4.2.1",
-    "vitest": "^0.29.8",
-    "vitest-github-actions-reporter": "^0.10.0"
+    "typescript": "~5.0.4"
   },
   "nodemonConfig": {
     "ignore": [
