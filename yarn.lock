@@ -351,7 +351,7 @@
   dependencies:
     "@octokit/openapi-types" "^12.11.0"
 
-"@octokit/types@^9.0.0", "@octokit/types@^9.1.0":
+"@octokit/types@^9.0.0":
   version "9.1.0"
   resolved "https://registry.npmjs.org/@octokit/types/-/types-9.1.0.tgz"
   integrity sha512-MPKlN20dSKZ2JGV8KHNO4Y9z6xs74p5sQ2a5++5/uVme44K/5UEntIpai2n1WIrVtMlafYLdfN27BiBs2taY6g==
