@@ -1,0 +1,104 @@
+{
+  "name": "graphql",
+  "version": "0.5.3",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "main": "bin/main.ts",
+  "engines": {
+    "node": "^18.0.0"
+  },
+  "scripts": {
+    "format": "prettier --list-different -w ./",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint --cache --ext ts,cjs,js ./",
+    "start": "nodemon ./bin/main.ts",
+    "test": "vitest --run",
+    "vitest": "vitest",
+    "run-file": "node --no-warnings --loader @esbuild-kit/esm-loader",
+    "e": "node --no-warnings -r dotenv/config --loader @esbuild-kit/esm-loader",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@esbuild-kit/esm-loader": "^2.5.5",
+    "@octokit/core": "^3.6.0",
+    "@octokit/rest": "^18.0.0",
+    "@octokit/webhooks": "^11.0.0",
+    "@sinclair/typebox": "^0.28.0",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "ajv-keywords": "^5.1.0",
+    "js-yaml": "^4.1.0",
+    "lodash-es": "^4.17.21",
+    "pino": "^8.11.0",
+    "pino-pretty": "^10.0.0"
+  },
+  "devDependencies": {
+    "@octokit/types": "^9.1.0",
+    "@types/js-yaml": "^4.0.5",
+    "@types/lodash-es": "^4.17.7",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@typescript-eslint/utils": "^5.57.1",
+    "@vitest/coverage-c8": "^0.29.8",
+    "@vitest/ui": "^0.29.8",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-rulesdir": "^0.2.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "eslint-plugin-unicorn": "^46.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "prettier-plugin-jsdoc": "^0.4.2",
+    "prettier-plugin-sh": "^0.12.8",
+    "typescript": "~5.0.4",
+    "vite": "^4.2.1",
+    "vitest": "^0.29.8",
+    "vitest-github-actions-reporter": "^0.10.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**.test.ts"
+    ],
+    "watch": [
+      "bin",
+      "lib",
+      "routes",
+      "config.yaml",
+      "package.json",
+      "tsconfig.json",
+      ".env"
+    ],
+    "delay": 100,
+    "execMap": {
+      "ts": "node --no-warnings -r dotenv/config --loader @esbuild-kit/esm-loader"
+    },
+    "env": {
+      "NODE_ENV": "development",
+      "REF": "development"
+    },
+    "ext": "ts,js,json,html"
+  },
+  "author": "",
+  "license": "MIT",
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-jsdoc"
+    ],
+    "tsdoc": true,
+    "printWidth": 100,
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "all"
+  }
+}

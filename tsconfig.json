@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": false,
+    "module": "ESNext",
+    "target": "ES2022",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": false,
+    "useUnknownInCatchVariables": true,
+    "esModuleInterop": false,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+    "lib": ["ES2022"],
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "allowImportingTsExtensions": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    "pretty": true,
+    "sourceMap": true,
+    "declaration": false,
+    "noEmit": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "paths": {
+      "@app/*": ["./*"]
+    }
+  }
+}

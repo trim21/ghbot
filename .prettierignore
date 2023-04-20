@@ -1,0 +1,4 @@
+dist/
+*.graphql
+coverage/
+.husky/_/
