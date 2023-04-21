@@ -72,6 +72,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
+          file: ./etc/main.dockerfile
           tags: ${{ steps.meta.outputs.tags }}
           build-args: |
             ARG_REF=${{ env.TAG }}
