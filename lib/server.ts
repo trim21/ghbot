@@ -11,13 +11,22 @@ export function createServer(): http.Server {
   });
 
   webhooks.on('package.published', async (ctx): Promise<void> => {
-    const repo = ctx.payload.repository;
+    const pkg = ctx.payload.package;
 
     if (
       !['bangumi/server-private', 'bangumi/server', 'bangumi/service-timeline'].includes(
-        repo.full_name,
+        `${pkg.namespace}/${pkg.name}`,
       )
     ) {
+      return;
+    }
+
+    const tag = pkg.package_version?.container_metadata?.tag?.name;
+    if (!tag) {
+      return;
+    }
+
+    if (tag.startsWith('base-')) {
       return;
     }
 
