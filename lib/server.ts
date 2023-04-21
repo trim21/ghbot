@@ -15,11 +15,14 @@ export function createServer(): http.Server {
   webhooks.on('package.published', async (ctx): Promise<void> => {
     const pkg = ctx.payload.package;
 
+    const pkgName = `${pkg.namespace}/${pkg.name}`;
+
     if (
       !['bangumi/server-private', 'bangumi/server', 'bangumi/service-timeline'].includes(
         `${pkg.namespace}/${pkg.name}`,
       )
     ) {
+      logger.info(`ignore package ${pkgName}`);
       return;
     }
 
@@ -29,6 +32,7 @@ export function createServer(): http.Server {
     }
 
     if (tag.startsWith('base-')) {
+      logger.info(`ignore base image '${tag}'`);
       return;
     }
 
