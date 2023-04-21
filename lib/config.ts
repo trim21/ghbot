@@ -21,9 +21,9 @@ export const developing = NODE_ENV === 'development';
 export const testing = NODE_ENV === 'test';
 
 export const projectRoot = url.fileURLToPath(new URL('..', import.meta.url));
-export const pkg = JSON.parse(
-  fs.readFileSync(path.resolve(projectRoot, 'package.json'), 'utf8'),
-) as { version: string };
+export const pkg = JSON.parse(fs.readFileSync(path.resolve(projectRoot, 'package.json'), 'utf8')) as {
+  version: string;
+};
 
 export const VERSION = developing ? 'development' : REF || pkg.version;
 
@@ -86,9 +86,7 @@ export function validateConfig(config: unknown) {
         ?.map((x) => {
           if (x.keyword === 'additionalProperties') {
             // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-            return `$${x.instancePath}: ${x.message}: ${JSON.stringify(
-              x.params.additionalProperty,
-            )}`;
+            return `$${x.instancePath}: ${x.message}: ${JSON.stringify(x.params.additionalProperty)}`;
           }
 
           return '  ' + (x.instancePath + ': ' + (x.message ?? `wrong data type ${x.schemaPath}`));
