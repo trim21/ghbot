@@ -73,6 +73,7 @@ jobs:
         with:
           context: .
           file: ./etc/main.dockerfile
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           build-args: |
             ARG_REF=${{ env.TAG }}
