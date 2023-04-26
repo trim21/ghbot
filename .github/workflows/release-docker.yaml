@@ -48,8 +48,10 @@ jobs:
         name: build base docker image
 
       - run: |
-          echo "TAG=master-$(git show --no-patch --no-notes --date=short --pretty='%h-%as')" >> $GITHUB_ENV
+          echo "TAG=master-$(git show --no-patch --no-notes --date=short-local --pretty='%h-%as')" >> $GITHUB_ENV
         if: "${{ !startsWith(github.ref, 'refs/tags/') }}"
+        env:
+          TZ: UTC
 
       - run: |
           echo "TAG=v$(cat package.json | jq .version -r)" >> $GITHUB_ENV
