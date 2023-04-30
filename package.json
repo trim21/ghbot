@@ -23,7 +23,7 @@
     "@esbuild-kit/esm-loader": "^2.5.5",
     "@octokit/rest": "^18.12.0",
     "@octokit/webhooks": "^11.0.0",
-    "@sinclair/typebox": "^0.28.0",
+    "@sinclair/typebox": "^0.28.8",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
     "ajv-keywords": "^5.1.0",

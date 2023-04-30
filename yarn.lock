@@ -544,10 +544,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinclair/typebox@npm:^0.28.0":
-  version: 0.28.0
-  resolution: "@sinclair/typebox@npm:0.28.0"
-  checksum: 41b7b3a32ffee1bf588837ca8f321848b14c635354d8467bea149523b5c08070562f784f626833ba4019a6ec2b3b1ae61687e4439068011437cfef742838f6f3
+"@sinclair/typebox@npm:^0.28.8":
+  version: 0.28.8
+  resolution: "@sinclair/typebox@npm:0.28.8"
+  checksum: 10afce98e33c181c8b69f69e4f581d0de2ca31ca75b6363259397ee5c40e3de8027a820c11d59a0f455fcc3d891764df321a65264e42d98325d7975ebfd12bda
   languageName: node
   linkType: hard
 
@@ -2501,7 +2501,7 @@ __metadata:
     "@esbuild-kit/esm-loader": ^2.5.5
     "@octokit/rest": ^18.12.0
     "@octokit/webhooks": ^11.0.0
-    "@sinclair/typebox": ^0.28.0
+    "@sinclair/typebox": ^0.28.8
     "@types/js-yaml": ^4.0.5
     "@types/lodash-es": ^4.17.7
     "@types/node": ^18.15.11
