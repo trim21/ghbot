@@ -5,6 +5,7 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 
 RUN yarn --prod \
+  && yarn cache clean \
   && rm package.json yarn.lock
 
 FROM gcr.io/distroless/nodejs18-debian11:latest
