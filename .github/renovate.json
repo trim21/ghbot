@@ -6,7 +6,6 @@
     "github>Trim21/renovate-config:app",
     "github>Trim21/renovate-config:monthly"
   ],
-  "automerge": true,
   "postUpdateOptions": ["yarnDedupeHighest"],
   "rangeStrategy": "bump",
   "dockerfile": {
@@ -18,5 +17,12 @@
   },
   "nodenv": {
     "enabled": false
-  }
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["gcr.io/distroless/nodejs18-debian11", "node"],
+      "pinDigests": true
+    }
+  ]
 }
