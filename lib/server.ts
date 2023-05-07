@@ -17,7 +17,11 @@ export function createServer(): http.Server {
 
     const pkgName = `${pkg.namespace}/${pkg.name}`;
 
-    if (!['bangumi/private-server', 'bangumi/chii', 'bangumi-ms-timeline'].includes(`${pkg.namespace}/${pkg.name}`)) {
+    if (
+      !['bangumi/private-server', 'bangumi/server-private', 'bangumi/chii', 'bangumi/ms-timeline'].includes(
+        `${pkg.namespace}/${pkg.name}`,
+      )
+    ) {
       logger.info(`ignore package ${pkgName}`);
       return;
     }
