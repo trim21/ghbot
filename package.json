@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@esbuild-kit/esm-loader": "^2.5.5",
-    "@octokit/rest": "^19.0.11",
-    "@octokit/webhooks": "^11.1.0",
+    "@octokit/rest": "^19.0.13",
+    "@octokit/webhooks": "^11.1.1",
     "@sinclair/typebox": "^0.28.14",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
