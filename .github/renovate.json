@@ -12,6 +12,7 @@
     "fileMatch": [".*dockerfile$"],
     "enabled": true
   },
+  "automerge": true,
   "docker-compose": {
     "enabled": false
   },
