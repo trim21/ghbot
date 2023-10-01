@@ -21,7 +21,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@esbuild-kit/esm-loader": "^2.5.5",
+    "@esbuild-kit/esm-loader": "^2.6.5",
     "@octokit/rest": "^20.0.1",
     "@octokit/webhooks": "^12.0.3",
     "@sinclair/typebox": "^0.31.17",
