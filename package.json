@@ -7,7 +7,7 @@
   "main": "bin/main.ts",
   "packageManager": "yarn@1.22.19",
   "engines": {
-    "node": "^18.0.0"
+    "node": "^20.0.0"
   },
   "scripts": {
     "format": "prettier --list-different -w ./",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@types/js-yaml": "^4.0.8",
     "@types/lodash-es": "^4.17.9",
-    "@types/node": "^18.18.1",
+    "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "@typescript-eslint/utils": "^6.7.3",
