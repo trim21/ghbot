@@ -357,10 +357,10 @@
     "@octokit/webhooks-types" "7.1.0"
     aggregate-error "^3.1.0"
 
-"@sinclair/typebox@^0.32.4":
-  version "0.32.4"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.32.4.tgz#94b8744215c1f54f38df9bd33626ef821ce66ca3"
-  integrity sha512-Q2Pex6H+HGuyxIGuFadkpqwtjZFXiVZlvy1rVX9XgAzUrDmUDEM69M2c4CkWUgMJ1NaFPvUf+cMBljY96GJVNQ==
+"@sinclair/typebox@^0.32.13":
+  version "0.32.13"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.32.13.tgz#1b9bf6de7319d17bfb6e34b9b5b2051ba6c71278"
+  integrity sha512-6gfhrgov2RWxPIlGyFcCVn1DejhmQvObIiBIx/Qx3FRnxlLS/RuoyDxK1hhhVU+S5+1Xmul32QALLErVfinyxw==
 
 "@types/debug@^4.0.0":
   version "4.1.12"
