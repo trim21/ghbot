@@ -364,10 +364,10 @@
     "@octokit/webhooks-methods" "^5.0.0"
     aggregate-error "^5.0.0"
 
-"@sinclair/typebox@^0.32.15":
-  version "0.32.15"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.32.15.tgz#92dcdc12907f7c0f6d954ba3700b5bb888d2eb34"
-  integrity sha512-5Lrwo7VOiWEBJBhHmqNmf3TPB9ll8gcEshvYJyAIJyCZ2PF48MFOtiDHJNj8+FsNcqImaQYmxVkKBCBlyAa/wg==
+"@sinclair/typebox@^0.32.20":
+  version "0.32.20"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.32.20.tgz#32bdeb6b185188622f965ebbc88e1a6d5127d88a"
+  integrity sha512-ziK497ILSIYMxD/thl496idIb03IZPlha04itLQu1xAFQbumWZ+Dj4PMMCkDRpAYhvVSdmRlTjGu2B2MA5RplQ==
 
 "@types/debug@^4.0.0":
   version "4.1.12"
