@@ -24,14 +24,14 @@
     "@esbuild-kit/esm-loader": "^2.6.5",
     "@octokit/rest": "^21.0.2",
     "@octokit/webhooks": "^13.3.0",
-    "@sinclair/typebox": "^0.33.12",
+    "@sinclair/typebox": "^0.33.17",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "ajv-keywords": "^5.1.0",
     "js-yaml": "^4.1.0",
     "lodash-es": "^4.17.21",
-    "pino": "^9.4.0",
-    "pino-pretty": "^11.2.2"
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
