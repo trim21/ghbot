@@ -51,7 +51,7 @@
     "eslint-plugin-rulesdir": "^0.2.2",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tsdoc": "^0.3.0",
-    "eslint-plugin-unicorn": "^52.0.0",
+    "eslint-plugin-unicorn": "^55.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
