@@ -1,2 +1,2 @@
-yarn run format
+yarn run format-check
 yarn run lint
