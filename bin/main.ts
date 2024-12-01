@@ -6,9 +6,8 @@ import { logger } from '@app/lib/logger.ts';
 import { createServer } from '@app/lib/server.ts';
 
 if (process.argv.includes('--help') || process.argv.includes('-h')) {
-  // eslint-disable-next-line no-console
   console.log('check ./lib/config.ts for all available env');
-  // eslint-disable-next-line n/no-process-exit,unicorn/no-process-exit
+  // eslint-disable-next-line unicorn/no-process-exit
   process.exit();
 }
 
