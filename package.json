@@ -18,7 +18,7 @@
     "vitest": "vitest",
     "run-file": "node --no-warnings --loader @esbuild-kit/esm-loader",
     "e": "node --no-warnings -r dotenv/config --loader @esbuild-kit/esm-loader",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@esbuild-kit/esm-loader": "^2.6.5",
