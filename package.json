@@ -23,15 +23,15 @@
   },
   "dependencies": {
     "@esbuild-kit/esm-loader": "^2.6.5",
-    "@octokit/rest": "^21.0.2",
-    "@octokit/webhooks": "^13.4.1",
-    "@sinclair/typebox": "^0.34.9",
+    "@octokit/rest": "^21.1.0",
+    "@octokit/webhooks": "^13.4.3",
+    "@sinclair/typebox": "^0.34.14",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "ajv-keywords": "^5.1.0",
     "js-yaml": "^4.1.0",
     "lodash-es": "^4.17.21",
-    "pino": "^9.5.0",
+    "pino": "^9.6.0",
     "pino-pretty": "^13.0.0"
   },
   "devDependencies": {
